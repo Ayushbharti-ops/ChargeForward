@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title updated -->
+    <title>The EV Guide 2025 | By Ayush Bharti</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0a0a0c;
+            --card-bg: #16161a;
+            --accent-green: #00ff88;
+            --text-main: #f0f0f0;
+            --text-dim: #a0a0a0;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(10, 10, 12, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-green);
+        }
+
+        /* Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a2a22 0%, #0a0a0c 70%);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: var(--text-dim);
+            max-width: 650px;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn {
+            padding: 15px 40px;
+            background-color: var(--accent-green);
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+        }
+
+        /* Sections */
+        .section-padding {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            border-left: 4px solid var(--accent-green);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--accent-green);
+            margin-bottom: 15px;
+        }
+
+        /* Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .specs-table th {
+            color: var(--accent-green);
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px 8%;
+            background: #050505;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo">EV2025</a>
+    <ul class="nav-links">
+        <li><a href="#models">Top Models</a></li>
+        <li><a href="#charging">Charging</a></li>
+        <li><a href="#buying">Buying Guide</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>The EV Guide 2025</h1>
+    <p>Your complete roadmap to the electric future — technology, charging & buying decisions.</p>
+    <div class="author">Created by Ayush Bharti</div>
+    <a href="#buying" class="cta-btn">Start Your Journey</a>
+</header>
+
+<section id="models" class="section-padding">
+    <h2 class="section-title">Best EVs of 2025</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Technology Leader</h3>
+            <p>Tesla Model 3 (Next-Gen) with extended 400-mile range and advanced AI-driving hardware.</p>
+        </div>
+        <div class="card">
+            <h3>Luxury Champion</h3>
+            <p>Lucid Air Sapphire offering ultra-fast 900V charging and unmatched efficiency.</p>
+        </div>
+        <div class="card">
+            <h3>Affordable Choice</h3>
+            <p>Hyundai Ioniq series bringing EV ownership to a mass-market price range.</p>
+        </div>
+    </div>
+</section>
+
+<section id="charging" class="section-padding" style="background:#0e0e11;">
+    <h2 class="section-title">Charging Speeds</h2>
+    <table class="specs-table">
+        <tr>
+            <th>Charger</th>
+            <th>10–80%</th>
+            <th>Use Case</th>
+        </tr>
+        <tr>
+            <td>Level 1</td>
+            <td>20–40 hrs</td>
+            <td>Emergency</td>
+        </tr>
+        <tr>
+            <td>Level 2</td>
+            <td>6–10 hrs</td>
+            <td>Home Charging</td>
+        </tr>
+        <tr>
+            <td>DC Fast</td>
+            <td>12–18 min</td>
+            <td>Highway Travel</td>
+        </tr>
+    </table>
+</section>
+
+<section id="buying" class="section-padding">
+    <h2 class="section-title">Why EVs Now?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Infrastructure Boom</h3>
+            <p>Global charging network expansion makes EV ownership easier than ever.</p>
+        </div>
+        <div class="card">
+            <h3>Battery Innovation</h3>
+            <p>New battery chemistry delivers higher range, faster charging, and longer life.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 The EV Guide | Designed & Developed by Ayush Bharti</p>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(anchor.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
